@@ -1,0 +1,8 @@
+models:
+  clip: "ViT-B/32"
+  blip: "microsoft/git-large"
+  llm: "distilgpt2"
+data:
+  image_dir: "data/images"
+  max_results: 20
+  batch_size: 4
