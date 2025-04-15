@@ -3,11 +3,9 @@ from dotenv import load_dotenv
 import os
 from pathlib import Path
 
-# Load .env file from root directory
 env_path = Path(__file__).resolve().parent.parent / '.env'
 load_dotenv(dotenv_path=env_path)
 
-# Access environment variables
 SECRET_KEY = os.getenv('GEMINI_API')
 class LocalLLM:
     def __init__(self,model_name, device="cpu"):

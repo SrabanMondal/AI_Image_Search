@@ -32,7 +32,6 @@ class GradioInterface:
         
         searcher = ImageSearcher(self.clip_model, image_paths, self.config["data"]["batch_size"])
         self.current_results = searcher.search(query)
-        # Prepare images and captions for gallery
         gallery = [(Image.open(path), f"Score: {score:.4f}") for path, score in self.current_results]
         return gallery, f"Found {len(gallery)} images."
 
@@ -55,13 +54,13 @@ class GradioInterface:
             return [], "Invalid image selection."
 
     def reset(self):
-        """Clear current query and results."""
+        """It clears current query and results."""
         self.current_query = None
         self.current_results = []
         return [], "Session reset. Enter a new query to start."
 
     def create_interface(self):
-        """Define the Gradio interface layout."""
+        """It defines the Gradio interface layout."""
         with gr.Blocks(title="Image Search Engine") as app:
             gr.Markdown("# Image Search Engine")
             gr.Markdown("Enter a query to search for images, refine results by selecting an image or providing feedback.")
@@ -83,7 +82,6 @@ class GradioInterface:
 
             reset_button = gr.Button("Reset")
 
-            # Bind actions to buttons
             search_button.click(
                 fn=self.search_images,
                 inputs=query_input,
