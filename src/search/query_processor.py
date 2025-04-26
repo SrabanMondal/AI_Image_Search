@@ -14,4 +14,8 @@ class QueryProcessor:
 
     def enhance_with_image(self, user_query, image_path):
         caption = self.blip_model.generate_caption(image_path)
-        return self.llm_model.enhance_with_caption(user_query, caption)
+        if user_query:
+            return self.llm_model.enhance_with_caption(user_query, caption)
+        else:
+            # If no user query, use caption as the query
+            return caption

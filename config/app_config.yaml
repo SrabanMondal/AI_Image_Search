@@ -4,5 +4,8 @@ models:
   llm: "distilgpt2"
 data:
   image_dir: "data/images"
+  temp_dir: "data/temp"
   max_results: 20
   batch_size: 4
+session:
+  timeout_seconds: 1800 

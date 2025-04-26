@@ -9,4 +9,6 @@ pyyaml
 gradio
 google-generativeai
 python-dotenv
+python-multipart
+
 git+https://github.com/openai/CLIP.git
