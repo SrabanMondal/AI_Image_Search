@@ -182,6 +182,7 @@ and scalability:
 For high traffic: - Upgrade to CPU Upgraded or GPU on Hugging Face
 Spaces. - Reduce `max_results` in `app_config.yaml` (e.g., from 20 to
 10). - Cache model embeddings for faster inference (future work).
+Containerizing the application in Docker is planned for future implementation.
 
 
 ## 🙌 Acknowledgments
