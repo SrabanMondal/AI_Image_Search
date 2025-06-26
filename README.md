@@ -3,8 +3,6 @@
 ![Image Search
 Engine](https://img.shields.io/badge/Status-Production%20Ready-green.svg)
 [![Python](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org)
-[![License:
-MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A **production-grade image search engine** powered by state-of-the-art
 AI models (CLIP, BLIP, and a local LLM) for text- and image-based
