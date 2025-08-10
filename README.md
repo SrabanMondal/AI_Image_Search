@@ -5,7 +5,7 @@ Engine](https://img.shields.io/badge/Status-Production%20Ready-green.svg)
 [![Python](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org)
 
 A **production-grade image search engine** powered by state-of-the-art
-AI models (CLIP, BLIP, and a local LLM) for text- and image-based
+AI models (CLIP, BLIP, and Gemini) for text- and image-based
 queries. This application enables users to search for images using
 natural language, uploaded images, or both, with iterative refinement
 via feedback or image selection. Built with a modular architecture, it
