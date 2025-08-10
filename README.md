@@ -51,7 +51,7 @@ deployment.
         matching for ranking.
     -   **BLIP (microsoft/git-large)**: Image captioning for query
         enhancement.
-    -   **Local LLM (distilgpt2)**: Query refinement and natural
+    -   **LLM (gemini-flash)**: Query refinement and natural
         language processing.
 -   **Frontend**: Gradio 3.50.0 for an interactive, web-based UI.
 -   **Data Fetching**: DuckDuckGo API for image retrieval, with local
@@ -147,7 +147,7 @@ and scalability:
 -   **Models (`src/models/`)**:
     -   `CLIPModel`: Embeds images and text for similarity ranking.
     -   `BLIPModel`: Generates captions from uploaded images.
-    -   `LocalLLM`: Enhances and refines queries using distilgpt2.
+    -   `LocalLLM`: Enhances and refines queries using distilgpt2/gemini.
 -   **Data (`src/data/`)**:
     -   `ImageFetcher`: Asynchronously fetches images via DuckDuckGo
         API, caching in `data/images/`.
